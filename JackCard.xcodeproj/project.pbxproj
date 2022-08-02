@@ -11,6 +11,9 @@
 		806669BB289969D700C84F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806669BA289969D700C84F15 /* ContentView.swift */; };
 		806669BD289969D800C84F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806669BC289969D800C84F15 /* Assets.xcassets */; };
 		806669C0289969D800C84F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806669BF289969D800C84F15 /* Preview Assets.xcassets */; };
+		806669C828996C7900C84F15 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 806669C728996C7900C84F15 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */; };
+		806669CB28996DCF00C84F15 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806669CA28996DCF00C84F15 /* Launch Screen.storyboard */; };
+		806669CD2899773900C84F15 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806669CC2899773900C84F15 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		806669BA289969D700C84F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		806669BC289969D800C84F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		806669BF289969D800C84F15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		806669C728996C7900C84F15 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		806669C928996D5A00C84F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		806669CA28996DCF00C84F15 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		806669CC2899773900C84F15 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,13 @@
 		806669B7289969D700C84F15 /* JackCard */ = {
 			isa = PBXGroup;
 			children = (
+				806669C928996D5A00C84F15 /* Info.plist */,
+				806669C628996C5F00C84F15 /* fonts */,
 				806669B8289969D700C84F15 /* JackCardApp.swift */,
+				806669CC2899773900C84F15 /* InfoView.swift */,
 				806669BA289969D700C84F15 /* ContentView.swift */,
 				806669BC289969D800C84F15 /* Assets.xcassets */,
+				806669CA28996DCF00C84F15 /* Launch Screen.storyboard */,
 				806669BE289969D800C84F15 /* Preview Content */,
 			);
 			path = JackCard;
@@ -65,6 +76,14 @@
 				806669BF289969D800C84F15 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		806669C628996C5F00C84F15 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				806669C728996C7900C84F15 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806669C828996C7900C84F15 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */,
 				806669C0289969D800C84F15 /* Preview Assets.xcassets in Resources */,
+				806669CB28996DCF00C84F15 /* Launch Screen.storyboard in Resources */,
 				806669BD289969D800C84F15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806669BB289969D700C84F15 /* ContentView.swift in Sources */,
+				806669CD2899773900C84F15 /* InfoView.swift in Sources */,
 				806669B9289969D700C84F15 /* JackCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +291,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JackCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JackCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JackCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JackCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
